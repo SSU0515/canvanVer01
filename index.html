@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--cdnuuid-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuidv4.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        name="canvanform"
+        action="https://localhost:3000/canvan.js"
+        method="post"
+      >
+        <input type="text" placeholder="할 일을 입력하세요" />
+        <input type="submit" value="추가하기" />
+      </form>
+
+      <div class="blocks">
+        <div class="block">
+          <h2>To Do 📑</h2>
+          <hr />
+          <div id="todo" class="list"></div>
+        </div>
+        <div class="block">
+          <h2>Doing 🌀</h2>
+          <hr />
+          <div id="doing" class="list"></div>
+        </div>
+        <div class="block">
+          <h2>Done ⭕</h2>
+          <hr />
+          <div id="done" class="list"></div>
+        </div>
+      </div>
+      <h3>
+        ※아이템을 삭제를 하려면 아이템에 마우스 가져가 오른쪽을 클릭하세요.
+      </h3>
+    </div>
+  </body>
+</html>
